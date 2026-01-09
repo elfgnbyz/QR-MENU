@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Coffee Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header class="top-header">
+    <div class="top-bar">
+        <h1>X COFFEE BAKERY</h1>
+        <div class="search-btn">🔍</div>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/header.jpg" alt="Lobby Coffee">
+        <div class="hero-overlay"></div>
+    </div>
+
+     
+    </div>
+</header>
+
+<main class="menu-grid">
+
+    <div class="menu-card" onclick="goCategory('coffees')">
+        <img src="images/coffees.jpg">
+        <span>COFFEES</span>
+    </div>
+
+    <div class="menu-card" onclick="goCategory('cold-mocktail')">
+        <img src="images/cold-mocktail.jpg">
+        <span>COLD MOCKTAIL</span>
+    </div>
+
+    <div class="menu-card" onclick="goCategory('frozen-milkshake-frappe')">
+        <img src="images/frozen-milkshake-frappe.jpg">
+        <span>FROZEN-MILKSHAKE-FRAPPE</span>
+    </div>
+
+    <div class="menu-card" onclick="goCategory('teas')">
+        <img src="images/teas.jpg">
+        <span>TEAS</span>
+    </div>
+
+    <div class="menu-card" onclick="goCategory('desserts')">
+        <img src="images/desserts.jpg">
+        <span>DESSERTS</span>
+    </div>
+
+    <div class="menu-card" onclick="goCategory('ice-creams')">
+        <img src="images/ice-creams.jpg">
+        <span>ICE CREAMS</span>
+    </div>
+
+</main>
+
+<footer>
+    xcoffeebakery.digital.menu
+</footer>
+
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<footer class="menu-footer">
+
+    <a href="https://www.instagram.com/elifgunbeyazz"
+       target="_blank"
+       class="footer-btn insta">
+
+        <img src="images/instagram.svg" alt="Instagram">
+        <span>Instagram</span>
+    </a>
+
+    <a href="https://www.google.com/maps?q=41.000000,39.000000"
+       target="_blank"
+       class="footer-btn map">
+
+        <img src="images/map.svg" alt="Yol Tarifi">
+        <span>Yol Tarifi</span>
+    </a>
+
+</footer>
+
+<div id="searchOverlay" class="search-overlay">
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Ürün ara...">
+        <span class="close-search">✕</span>
+    </div>
+    <div class="search-results">
+        
+        <div id="searchResults"></div>
+    </div>
+</div>
+
+
+</body>
+</html>

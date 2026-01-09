@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kategori</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SABİT HEADER -->
+<header class="category-top">
+    <span class="back-btn" onclick="goHome()">←</span>
+    <h1>X COFFEE BAKERY</h1>
+
+</header>
+
+<!-- HERO CATEGORY IMAGE -->
+<section class="category-hero">
+    <img id="categoryImage" src="" alt="">
+    <div class="hero-dark"></div>
+    <div class="hero-text">
+        <h2 id="categoryTitle"></h2>
+        <button onclick="goHome()">Menüye Dön</button>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<main class="product-list" id="productList"></main>
+
+
+<div id="productList"></div>
+
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+<footer class="menu-footer">
+
+    <a href="https://www.instagram.com/elifgunbeyazz"
+       target="_blank"
+       class="footer-btn insta">
+
+        <img src="images/instagram.svg" alt="Instagram">
+        <span>Instagram</span>
+    </a>
+
+    <a href="https://www.google.com/maps?q=41.000000,39.000000"
+       target="_blank"
+       class="footer-btn map">
+
+        <img src="images/map.svg" alt="Yol Tarifi">
+        <span>Yol Tarifi</span>
+    </a>
+
+</footer>
+<!-- SEARCH OVERLAY -->
+<div id="searchOverlay" class="search-overlay">
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Ürün ara...">
+        <span class="close-search">✕</span>
+    </div>
+   
+</div>
+</body>
+</html>
